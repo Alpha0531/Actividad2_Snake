@@ -43,6 +43,18 @@ def move():
     update()
     ontimer(move, 100)
 
+    lmao = randrange(0,10)
+    if lmao == 9:
+        food.x = food.x +10
+        if food.x > 180:
+            food.x = -180
+
+    lmao = randrange(0,10)
+    if lmao == 5:
+        food.y = food.y +10
+        if food.y > 180:
+            food.y = -180
+
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
