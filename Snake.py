@@ -3,6 +3,7 @@ from turtle import *
 from random import randrange
 from freegames import square, vector
 
+
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
@@ -50,7 +51,7 @@ def move():
     square(food.x, food.y, 9, color_food)
     update()
     ontimer(move, 100)
-
+    "Comida aleatoria"
     lmao = randrange(0,10)
     if lmao == 9:
         food.x = food.x +10
